@@ -5,7 +5,6 @@ import RegisterPage from "./views/RegisterPage";
 import PricingPage from "./views/PricingPage";
 import Home from "./views/Home";
 import Header from "./components/shared/Header";
-import Footer from "./components/shared/Footer";
 import CoursesPage from "./views/CoursesPage";
 import Profile from "./components/instructor/Profile";
 import MyLearningPage from "./views/MyLearningPage";

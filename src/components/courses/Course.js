@@ -41,26 +41,24 @@ const Course = ({ course }) => {
             <Link to={`/courses/${course.id}`} className="details-link">
               تفاصيل الكورس
             </Link>
-            {/* <div
-              className={`modal d-flex flex-column justify-content-center align-items-center ${
-                modal && "show-modal"
-              }`}
-            >
-              <i
-                className="fa-solid fa-x bg-white mb-2 close-video"
-                onClick={() => setModal(false)}
-              ></i>
-              <video width="720" height="420" controls autoPlay>
-                <source
-                  src={require("../../assets/Demo.mp4")}
-                  type="video/mp4"
-                ></source>
-                <source
-                  src={require("../../assets/Demo.mp4")}
-                  type="video/ogg"
-                ></source>
-              </video>
-            </div> */}
+            {modal && (
+              <div className="modal d-flex flex-column justify-content-center align-items-center">
+                <i
+                  className="fa-solid fa-x bg-white mb-2 close-video"
+                  onClick={() => setModal(!modal)}
+                ></i>
+                <video width="720" height="420" controls autoPlay>
+                  <source
+                    src={require("../../assets/Demo.mp4")}
+                    type="video/mp4"
+                  ></source>
+                  <source
+                    src={require("../../assets/Demo.mp4")}
+                    type="video/ogg"
+                  ></source>
+                </video>
+              </div>
+            )}
           </div>
         </div>
       </div>
