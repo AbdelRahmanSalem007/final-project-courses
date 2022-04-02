@@ -1,0 +1,31 @@
+@import "../../assets/scss/media-mixins";
+
+.course {
+  &__header {
+    background: #333;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.15rem;
+    box-shadow: 0px 0px 3px 0px #222;
+  }
+  &__logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-inline-end: 1rem;
+  }
+  &__h4 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+  }
+}
+@include to-mobile-sm {
+  .course {
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

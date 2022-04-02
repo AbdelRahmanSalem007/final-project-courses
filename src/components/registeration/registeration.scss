@@ -1,0 +1,76 @@
+.login-page form,
+.register-page form {
+  background-color: #fff;
+  border: var(--main-border);
+  box-shadow: var(--box-shadow);
+  padding: 0 15px;
+}
+.login-page form .button button,
+.register-page .button button {
+  background-color: var(--green-color) !important;
+  border-color: var(--green-color) !important;
+  color: #fff !important;
+  padding: 10px 30px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+.login-page form .button button:hover,
+.register-page .button button:hover {
+  background-color: #23d37b !important;
+  border-color: #32dd88 !important;
+}
+.login-title,
+.register-title {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.802rem;
+}
+.check-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  input {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.remember {
+  flex-basis: 20%;
+}
+.forget {
+  flex-basis: 80%;
+  color: var(--green-color);
+  text-align: end;
+}
+.forget:hover {
+  color: #189155;
+}
+.input {
+  border-radius: 5px !important;
+  padding-left: 8px;
+  padding-right: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.registeration-header,
+.registeration-footer {
+  background-color: #fff;
+  text-align: center;
+}
+.registeration-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 40px 0;
+  width: 100%;
+  color: #bac1c7;
+}
+.form-control {
+  direction: rtl !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+}

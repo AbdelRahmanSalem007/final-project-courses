@@ -1,0 +1,14 @@
+.course {
+  &__content {
+  }
+
+  &__details {
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    p {
+      font-size: 1rem !important;
+      font-weight: 600;
+      color: #545454;
+    }
+  }
+}

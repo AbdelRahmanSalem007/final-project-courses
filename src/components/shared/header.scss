@@ -1,0 +1,44 @@
+.header {
+  background-color: #fff;
+}
+.header .navbar {
+  width: 100%;
+  display: flex;
+}
+.header .links {
+  width: 50%;
+  list-style: none;
+}
+.header .logo {
+  margin-right: auto;
+}
+.header .links a {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.2s;
+  border-radius: 3px;
+  padding: 10px 5px;
+}
+.header .links a:hover {
+  color: var(--main-color);
+}
+.header .links .link {
+  width: auto;
+}
+.navbar-collapse {
+  z-index: 5;
+  background-color: #fff;
+}
+.active {
+  color: var(--main-color) !important;
+  font-weight: 600;
+}
+.navbar-nav-scroll {
+  max-height: fit-content !important;
+}
+@media (max-width: 768px) {
+  .logo img {
+    width: 50% !important;
+  }
+}

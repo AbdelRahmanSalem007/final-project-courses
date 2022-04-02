@@ -1,0 +1,63 @@
+.course-header {
+  background-color: rgb(80, 87, 99);
+}
+.preview {
+  width: 400px;
+  top: 120px;
+  left: 200px;
+}
+.instructor-details {
+  background-color: #ccc;
+}
+span.instructor {
+  cursor: pointer;
+  color: var(--green-color);
+}
+.instructor-social {
+  margin-left: 20px;
+}
+.skills ul {
+  list-style: none;
+}
+
+@media (max-width: 1200px) {
+  .preview {
+    position: static !important;
+    width: 600px;
+    margin: 0 auto;
+    height: auto !important;
+    margin-top: 50px;
+  }
+  .skills,
+  .instructor-details .container > div {
+    width: 100% !important;
+    text-align: center;
+  }
+  .course-lecs {
+    width: 100% !important;
+  }
+}
+@media (max-width: 720px) {
+  .preview {
+    width: 100%;
+  }
+}
+.instructor-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.social a {
+  color: #000;
+  font-size: 23px;
+}
+.details-lesson {
+  transition: all 0.3s ease-in-out;
+}
+.details-lesson:hover {
+  background-color: #ccc;
+}
+.lesson-title {
+  cursor: pointer;
+}

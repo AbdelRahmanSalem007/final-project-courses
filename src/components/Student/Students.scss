@@ -1,0 +1,119 @@
+@import "../../assets/scss/media-mixins";
+.settings-page {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .settings {
+    height: 100%;
+    margin-bottom: 1rem !important;
+
+    &-tab__container,
+    &-tab__row {
+      flex: 1;
+      height: 100%;
+    }
+
+    &__profile-image {
+      figure {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__sidebar {
+      border-radius: 7.5px;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: 100%;
+
+      .nav-pills .nav-link {
+        color: #717171;
+        border-radius: 0;
+        font-size: 1rem;
+        font-weight: bold;
+        &.active {
+          border-radius: 0;
+          background: #cdcdcd;
+          color: white;
+          position: relative;
+          &::before {
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #fc5a58;
+            position: absolute;
+            z-index: 999;
+          }
+        }
+      }
+    }
+    &__content {
+      padding: 1rem;
+      border-radius: 7.5px;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      height: 100%;
+
+      .tab-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+      }
+      .content__item {
+        &.empty {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          color: #717171;
+          font-weight: 600;
+          button.add-btn {
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fc5a58;
+            border: #fc5a58;
+            &:focus {
+              box-shadow: rgba(#fc5a58, 90%) 0px 1px 4px;
+            }
+            .add-icon {
+              color: white;
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+
+      .add-icon {
+        margin-inline-end: 0.25rem;
+      }
+    }
+  }
+}
+
+@include to-tablet-sm {
+  .settings-page {
+    .settings {
+      &__sidebar {
+        height: auto !important;
+      }
+      &__sidebar-col,
+      &__content-col {
+        margin-bottom: 1rem;
+        height: auto;
+      }
+    }
+  }
+}

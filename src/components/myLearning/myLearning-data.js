@@ -1,0 +1,68 @@
+const myLearningData = [
+  {
+    courseTitle: "كورس أنجولر الكامل 2022",
+    img: "reactjs.png",
+    instructor: "السيد تركي",
+    jobTitle: "مطور ويب محترف",
+    progress: 30,
+    rating: "",
+  },
+  {
+    courseTitle: "كورس ريأكت الكامل 2022",
+    img: "reactjs.png",
+    instructor: "احمد الخليلي",
+    jobTitle: "مطور ويب محترف",
+    progress: 75,
+    rating: "",
+  },
+  {
+    courseTitle: "طريقك لتعلم البرمجة",
+    img: "reactjs.png",
+    instructor: "عبدالرحمن سالم",
+    jobTitle: "مطور ويب محترف",
+    progress: 53,
+    rating: "",
+  },
+  {
+    courseTitle: "كورس ريأكت الكامل 2022",
+    img: "reactjs.png",
+    instructor: "السيد تركي",
+    jobTitle: "مطور ويب محترف",
+    progress: 98,
+    rating: "",
+  },
+  {
+    courseTitle: "كورس أنجولر الكامل 2022",
+    img: "reactjs.png",
+    instructor: "احمد الخليلي",
+    jobTitle: "مطور ويب محترف",
+    progress: 30,
+    rating: "",
+  },
+  {
+    courseTitle: "كورس أنجولار الكامل 2022",
+    img: "reactjs.png",
+    instructor: "عبدالرحمن سالم",
+    jobTitle: "مطور ويب محترف",
+    progress: 75,
+    rating: "",
+  },
+  {
+    courseTitle: "كورس ريأكت الكامل 2022",
+    img: "reactjs.png",
+    instructor: "السيد تركي",
+    jobTitle: "مطور ويب محترف",
+    progress: 53,
+    rating: "",
+  },
+  {
+    courseTitle: "كورس ريأكت الكامل 2022",
+    img: "reactjs.png",
+    instructor: "احمد الخليلي",
+    jobTitle: "مطور ويب محترف",
+    progress: 98,
+    rating: "",
+  },
+];
+
+export default myLearningData;

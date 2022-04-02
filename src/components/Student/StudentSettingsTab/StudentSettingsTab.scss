@@ -1,0 +1,46 @@
+.student-settings-tab {
+  header {
+    h5 {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: #fc5a58;
+    }
+  }
+  .ant-form-item {
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+  }
+  .ant-form-horizontal .ant-form-item-label {
+    text-align: start;
+  }
+  .ant-form-item-label > label {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+  .ant-form-item-label
+    > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none;
+  }
+  .ant-input {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .ant-input:hover,
+  .ant-input:focus,
+  .ant-input-focused {
+    border-color: gray;
+    box-shadow: none;
+  }
+  .btn-submit {
+    color: white;
+    &:focus,
+    &:active {
+      box-shadow: rgba(#fc5a58, 90%) 0px 1px 4px;
+    }
+    background-color: #fc5a58;
+  }
+}

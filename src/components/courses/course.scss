@@ -1,0 +1,90 @@
+.course__card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.course p {
+  margin: 0;
+  color: #717171;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.course .instructor p {
+  color: #4c4c4c;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.course-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img {
+  height: 35px;
+  min-width: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url("../../assets/andrei.png") center center / cover no-repeat;
+  margin-left: 9px;
+
+  border: 1px solid #c1c1c1;
+}
+.preview-course {
+  border: 1px solid var(--main-color);
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 0.775rem;
+  background-color: var(--main-color);
+  color: rgb(255, 255, 255);
+  flex-basis: 49%;
+}
+.preview-course:hover {
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}
+.details-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  color: var(--main-color);
+  flex-basis: 49%;
+}
+.course__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+.details-link:hover {
+  background-color: var(--main-color);
+  box-shadow: unset;
+  color: rgb(255, 255, 255);
+}
+.modal {
+  display: none !important;
+}
+.show-modal {
+  display: flex !important;
+  background-color: rgba(000, 000, 000, 0.5);
+}
+.close-video {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+@media (max-width: 61.9375rem) {
+  .course .buttons .preview-course,
+  .course .buttons .details-link {
+    // font-size: 12.8px !important;
+    font-weight: normal !important;
+  }
+}
