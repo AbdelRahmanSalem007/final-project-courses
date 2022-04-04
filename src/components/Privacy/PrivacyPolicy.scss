@@ -1,0 +1,44 @@
+
+/* start style PrivacyPolicy */
+    .PrivacyPolicy{
+        h2.PrivacyPolicy_header{
+            position: relative;
+            margin: 20px 0; 
+        &::after{
+            content: '';
+            position: absolute;
+            height: 3px;
+            left:0;
+            width: 50vh;
+            background-color: var(--main-color);
+            top: 50%;
+        
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            height: 3px;
+            right:0;
+            width: 50vh;
+            background-color: var(--main-color);
+            top: 50%;    
+        }
+        }
+        
+        .PrivacyPolicy_item{
+            b{
+                color: var(--main-color);
+            }
+            .PrivacyPolicy_item_icon{
+                color: var(--main-color);
+                font-size: 22px;
+            }
+            
+        }
+    }
+/* end style PrivacyPolicy */
+
+
+
+
