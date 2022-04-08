@@ -1,32 +1,53 @@
 import MyLearningData from "./myLearning-data";
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
-// import StarIcon from "../../assets/icons/Star";
+import { Form, Input, Select } from "antd";
 import "./MyLearning.scss";
 
-// const Content = () => {
-//   const customIcons = [
-//     {
-//       icon: <StarIcon />,
-//     },
-//     {
-//       icon: <StarIcon />,
-//     },
-//     {
-//       icon: <StarIcon />,
-//     },
-//     {
-//       icon: <StarIcon />,
-//     },
-//     {
-//       icon: <StarIcon />,
-//     },
-//   ];
+const { Option } = Select;
 
 const MyLearning = () => {
   return (
     <section className="my-learning">
       <div className="container">
+        <Form className="py-5">
+          <div className="d-flex">
+            <div className="w-50 d-flex">
+              <Form.Item label="ترتيب" className="me-3 mb-3 shadow-none">
+                <Select defaultValue="latest" className="me-2">
+                  <Option value="latest">المشغلة مؤخرا</Option>
+                  <Option value="date">تاريخ الاضافة</Option>
+                </Select>
+              </Form.Item>
+
+              <Form.Item label="تصفية" className="me-3 mb-3">
+                <Select defaultValue="category" className="me-2 shadow-none">
+                  <Option value="category">حسب الفئة</Option>
+                  <Option value="date">تاريخ الاضافة</Option>
+                </Select>
+              </Form.Item>
+
+              <Form.Item className="me-3 mb-3">
+                <Select defaultValue="progress" className="me-2 shadow-none">
+                  <Option value="progress">حسب التقدم</Option>
+                  <Option value="date">تاريخ الاضافة</Option>
+                </Select>
+              </Form.Item>
+
+              <Form.Item className="me-3 mb-3">
+                <Select defaultValue="instructor" className="me-2 shadow-none">
+                  <Option value="instructor">حسب المدرب</Option>
+                  <Option value="date">تاريخ الاضافة</Option>
+                </Select>
+              </Form.Item>
+            </div>
+            <div className="w-50 d-flex justify-content-end">
+              <Form.Item className="mb-3 w-50">
+                <Input placeholder="ابحث عن كورس" className="shadow-none" />
+              </Form.Item>
+            </div>
+          </div>
+        </Form>
         <div className="row justify-content-between my-learning__courses">
           {MyLearningData.map((course, index) => (
             <div

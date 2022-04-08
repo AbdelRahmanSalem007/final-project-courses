@@ -6,16 +6,12 @@ import "./header.scss";
 const Header = () => {
   return (
     <header className="header">
-      <Navbar bg="white" expand="lg">
-        <Container fluid className="flex-row-reverse">
-          <div className="logo-container text-end">
-            <NavLink to="/" className="text-center">
-              <figure className="mb-0 w-75 logo">
-                <img src={Logo} alt="Logo" className="w-100" />
-              </figure>
-            </NavLink>
-          </div>
-          <Navbar.Toggle aria-controls="navbarScroll" className="shadow-none" />
+      <Container fluid className="d-flex py-2">
+        <Navbar bg="white" expand="lg">
+          <Navbar.Toggle
+            aria-controls="navbarScroll"
+            className="shadow-none border-0"
+          />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
@@ -42,8 +38,15 @@ const Header = () => {
               </NavLink>
             </Nav>
           </Navbar.Collapse>
-        </Container>
-      </Navbar>
+        </Navbar>
+        <div className="logo-container">
+          <NavLink to="/">
+            <figure className="mb-0 logo">
+              <img src={Logo} alt="Logo" className=" w-100" />
+            </figure>
+          </NavLink>
+        </div>
+      </Container>
     </header>
   );
 };

@@ -1,5 +1,6 @@
 .header {
   background-color: #fff;
+  position: relative;
 }
 .header .navbar {
   width: 100%;
@@ -38,7 +39,18 @@
   max-height: fit-content !important;
 }
 @media (max-width: 768px) {
+  .logo {
+    margin-top: 0.8rem;
+  }
   .logo img {
-    width: 50% !important;
+    width: 80% !important;
+  }
+}
+@media (min-width: 769px) {
+  .container-fluid {
+    align-items: center !important;
+  }
+  .logo img {
+    width: 100% !important;
   }
 }
