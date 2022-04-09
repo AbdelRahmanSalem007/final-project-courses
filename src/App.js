@@ -8,15 +8,11 @@ import Profile from "./components/instructor/Profile";
 import MyLearningPage from "./views/MyLearningPage";
 import CoursesLessons from "./components/Courses-Lessons/CoursesLesson";
 import StudentSetting from "./components/Student/StudentSettings";
-<<<<<<< HEAD
 import ForgetPassword from "./components/registeration/ForgetPassword";
 import CourseDetails from "./components/courses/CourseDetails";
-=======
-import CourseDetails from './components/courses/CourseDetails'
-import Questions from './components/Questions/Questions';
-import PrivacyPolicy from './components/Privacy/PrivacyPolicy'
->>>>>>> ec3313d9a3875ae25754c86eea36bd41fcd05644
-
+import CourseDetails from "./components/courses/CourseDetails";
+import Questions from "./components/Questions/Questions";
+import PrivacyPolicy from "./components/Privacy/PrivacyPolicy";
 import { Routes, Route } from "react-router-dom";
 import "antd/dist/antd.css";
 import "./App.scss";
@@ -41,7 +37,7 @@ function App() {
         </Routes>
       </main>
       <PrivacyPolicy />
-      <Questions /> 
+      <Questions />
     </>
   );
 }
