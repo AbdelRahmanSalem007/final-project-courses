@@ -15,6 +15,7 @@ import CourseDetails from "./components/courses/CourseDetails";
 // styling
 import "antd/dist/antd.css";
 import "./App.scss";
+import Footer from "./components/shared/Footer";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="student-settings" element={<StudentSetting />} />
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
