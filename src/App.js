@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import LoginPage from "./views/LoginPage";
 import RegisterPage from "./views/RegisterPage";
 import PricingPage from "./views/PricingPage";
@@ -10,10 +11,8 @@ import CoursesLessons from "./components/Courses-Lessons/CoursesLesson";
 import StudentSetting from "./components/Student/StudentSettings";
 import ForgetPassword from "./components/registeration/ForgetPassword";
 import CourseDetails from "./components/courses/CourseDetails";
-import CourseDetails from "./components/courses/CourseDetails";
-import Questions from "./components/Questions/Questions";
-import PrivacyPolicy from "./components/Privacy/PrivacyPolicy";
-import { Routes, Route } from "react-router-dom";
+
+// styling
 import "antd/dist/antd.css";
 import "./App.scss";
 
@@ -36,8 +35,6 @@ function App() {
           <Route path="student-settings" element={<StudentSetting />} />
         </Routes>
       </main>
-      <PrivacyPolicy />
-      <Questions />
     </>
   );
 }

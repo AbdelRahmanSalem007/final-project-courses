@@ -1,6 +1,5 @@
-import React from "react";
-import "./Content.scss";
 import ReactPlayer from "react-player";
+import "./Content.scss";
 
 const Content = () => {
   return (

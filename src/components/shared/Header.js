@@ -1,7 +1,9 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Container, Nav, Navbar, Dropdown } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.jpeg";
+import angularCourseImage from "../../assets/angular.png";
 import "./header.scss";
+import { Button, Divider, Progress } from "antd";
 
 const Header = () => {
   return (
@@ -33,9 +35,67 @@ const Header = () => {
               <NavLink className="nav-link" to="register">
                 إنشاء حساب
               </NavLink>
-              <NavLink className="nav-link" to="my-learning">
-                كورســاتي
-              </NavLink>
+              <Dropdown>
+                <Dropdown.Toggle
+                  className="nav-link"
+                  variant="default"
+                  id="dropdown-basic"
+                >
+                  كورساتي
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu className="my-learning__dropdown ">
+                  <Dropdown.Item>
+                    <Link to="/course-lessons">
+                      <div className="d-flex">
+                        <figure className="my-learning__fig">
+                          <img
+                            src={angularCourseImage}
+                            alt="course_description"
+                          />
+                        </figure>
+                        <div className="my-learning__desc">
+                          <h6>كورس أساسيات الأنجلر 12</h6>
+                          <Progress percent={75} size="small" status="normal" />
+                        </div>
+                      </div>
+                    </Link>
+                  </Dropdown.Item>
+                  <Divider
+                    style={{
+                      marginTop: ".25rem",
+                      marginBottom: "0.25rem",
+                    }}
+                  />
+                  <Dropdown.Item>
+                    <Link to="/course-lessons">
+                      <div className="d-flex">
+                        <figure className="my-learning__fig">
+                          <img
+                            src={angularCourseImage}
+                            alt="course_description"
+                          />
+                        </figure>
+                        <div className="my-learning__desc">
+                          <h6>كورس أساسيات الأنجلر 12</h6>
+                          <Progress percent={75} size="small" status="normal" />
+                        </div>
+                      </div>
+                    </Link>
+                  </Dropdown.Item>
+                  <Divider
+                    style={{
+                      marginTop: ".25rem",
+                      marginBottom: "0.25rem",
+                    }}
+                  />
+                  <Dropdown.Item>
+                    <Button type="default" className="w-100 my-learning__btn">
+                      الذهاب إلي كورساتي
+                    </Button>
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
