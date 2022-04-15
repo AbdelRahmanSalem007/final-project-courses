@@ -42,11 +42,10 @@ const Course = ({ course }) => {
               تفاصيل الكورس
             </Link>
             {modal && (
-              <div className="modal d-flex flex-column justify-content-center align-items-center">
-                <i
-                  className="fa-solid fa-x bg-white mb-2 close-video"
-                  onClick={() => setModal(!modal)}
-                ></i>
+              <div
+                className="modal d-flex justify-content-center align-items-center"
+                onClick={() => setModal(!modal)}
+              >
                 <video width="720" height="420" controls autoPlay>
                   <source
                     src={require("../../assets/Demo.mp4")}

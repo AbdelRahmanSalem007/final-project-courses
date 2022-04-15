@@ -1,4 +1,5 @@
 import { Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./registeration.scss";
 
 const Register = () => {
@@ -39,15 +40,6 @@ const Register = () => {
             <Form.Control type="date" placeholder="تاريخ الميلاد" />
           </Form.Group>
 
-          <div className="check-container">
-            <Form.Group className="d-flex">
-              <Form.Check type="checkbox" id="remember" />
-              <Form.Label className="px-2" htmlFor="remember">
-                تذكرني
-              </Form.Label>
-            </Form.Group>
-            <a className="forget">هل نسيت كلمة المرور؟</a>
-          </div>
           <Form.Group className="button pt-3 pb-2">
             <Button type="submit" className="w-100 shadow-none">
               تسجيل الدخول
@@ -65,6 +57,9 @@ const Register = () => {
               </Button>
             </Form.Group>
           </div>
+          <p className="text-center my-3">
+            لديك حساب؟ <Link to="/login">تسجيل الدخول</Link>
+          </p>
         </Form>
       </section>
     </div>

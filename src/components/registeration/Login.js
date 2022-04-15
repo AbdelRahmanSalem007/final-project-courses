@@ -1,4 +1,5 @@
 import { Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./registeration.scss";
 
 const Login = () => {
@@ -24,9 +25,9 @@ const Login = () => {
                 تذكرني
               </Form.Label>
             </Form.Group>
-            <a href="#" className="forget">
+            <Link to="/reset-password" className="forget">
               هل نسيت كلمة المرور؟
-            </a>
+            </Link>
           </div>
 
           <div className="">
