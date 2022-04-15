@@ -38,6 +38,55 @@
 .navbar-nav-scroll {
   max-height: fit-content !important;
 }
+
+.header {
+  .dropdown {
+    .btn:focus {
+      box-shadow: none !important;
+    }
+  }
+  .my-learning {
+    &__dropdown {
+      .dropdown-item:focus,
+      .dropdown-item:hover,
+      .dropdown-item:active {
+        background-color: transparent;
+        color: inherit;
+      }
+      .ant-progress-bg {
+        background: var(--main-color);
+      }
+    }
+    &__fig {
+      width: 125px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-inline-end: 1rem;
+      margin-bottom: 0 !important;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__desc {
+      h6 {
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+    }
+
+    &__btn {
+      color: white;
+      background-color: var(--main-color);
+      border: 0;
+      &:hover {
+        color: white;
+        background-color: var(--main-color);
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .logo {
     margin-top: 0.8rem;

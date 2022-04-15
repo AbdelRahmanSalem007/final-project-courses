@@ -17,3 +17,47 @@
   width: 20px;
   background-color: rgb(55, 63, 73);
 }
+
+.courses__item {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  .courses__show__header {
+    color: #333;
+    h4 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #313131;
+      margin-bottom: 1rem;
+    }
+  }
+  .courses__show__desc {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2;
+    color: gray;
+    margin-bottom: 2rem !important;
+  }
+  .course__show__btn {
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    &:hover {
+      box-shadow: var(--main-color) 0px 1px 4px;
+      color: white;
+    }
+  }
+  figure {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
