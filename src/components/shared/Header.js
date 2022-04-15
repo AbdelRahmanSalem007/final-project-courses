@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar, Dropdown } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../../assets/logo.jpeg";
+import Logo from "../../assets/dark-logo.png";
 import angularCourseImage from "../../assets/angular.png";
 import "./header.scss";
 import { Button, Divider, Progress } from "antd";

@@ -4,8 +4,24 @@ import "./home.scss";
 import AngularImage from "../assets/angular.png";
 import webDevelopmentImage from "../assets/web_developement.png";
 import { Row, Col } from "antd";
+import { Slide } from "react-slideshow-image";
 
 const Home = () => {
+  const slideImages = [
+    {
+      url: "../assets/angular.png",
+      caption: "Slide 1",
+    },
+    {
+      url: "../assets/web_developement.png",
+      caption: "Slide 2",
+    },
+    {
+      url: "../assets/web_developement.png",
+      caption: "Slide 3",
+    },
+  ];
+
   return (
     <div className="home">
       <div className="container">
@@ -80,9 +96,6 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-
-        <PrivacyPolicy />
-        <Questions />
       </div>
     </div>
   );
