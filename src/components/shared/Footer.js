@@ -29,7 +29,15 @@ const Footer = () => {
       </section>
       <footer className="footer">
         <div className="container">
-          <p className="text-center">جميع الحقوق محفوظة لدي CodingHub</p>
+          <p className="footer__rights">جميع الحقوق محفوظة لدي CodingHub</p>
+          {/* <ul className="text-center">
+            <li>
+              <i></i>
+            </li>
+            <li></li>
+            <li>linked</li>
+            <li>linked</li>
+          </ul> */}
         </div>
       </footer>
     </>

@@ -1,26 +1,20 @@
-import Questions from "../components/Questions/Questions";
-import PrivacyPolicy from "../components/Privacy/PrivacyPolicy";
 import "./home.scss";
 import AngularImage from "../assets/angular.png";
 import webDevelopmentImage from "../assets/web_developement.png";
 import { Row, Col } from "antd";
-import { Slide } from "react-slideshow-image";
+// import Slider from "react-slick";
+import Slider from "react-slick";
+import coursesData from "../components/courses/coursesData";
+import Course from "./../components/courses/Course";
 
 const Home = () => {
-  const slideImages = [
-    {
-      url: "../assets/angular.png",
-      caption: "Slide 1",
-    },
-    {
-      url: "../assets/web_developement.png",
-      caption: "Slide 2",
-    },
-    {
-      url: "../assets/web_developement.png",
-      caption: "Slide 3",
-    },
-  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className="home">
@@ -95,6 +89,17 @@ const Home = () => {
               </div>
             </Col>
           </Row>
+        </div>
+        <div className="home__slider">
+          <div className="container">
+            <Slider {...settings}>
+              {coursesData.map((course) => (
+                <div className="px-2">
+                  <Course course={course} key={course.id} />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>
