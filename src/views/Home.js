@@ -106,8 +106,11 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-        <div className="home__slider">
+        <div className="home__slider py-3">
           <div className="container">
+            <header className="home__slider-header">
+              <h2>الكورسات المفضلة</h2>
+            </header>
             <Slider {...settings}>
               {coursesData.map((course) => (
                 <div className="course-slider__wrapper">
