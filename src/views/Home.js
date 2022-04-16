@@ -14,6 +14,22 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1120,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 989,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -94,7 +110,7 @@ const Home = () => {
           <div className="container">
             <Slider {...settings}>
               {coursesData.map((course) => (
-                <div className="px-2">
+                <div className="course-slider__wrapper">
                   <Course course={course} key={course.id} />
                 </div>
               ))}

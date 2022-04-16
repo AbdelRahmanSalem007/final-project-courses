@@ -61,3 +61,18 @@
     }
   }
 }
+
+.home {
+  .course-slider__wrapper {
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+  }
+}
+@media (max-width: 989px) {
+  .home {
+    .course-slider__wrapper {
+      padding-inline-end: 0;
+      padding-inline-start: 0;
+    }
+  }
+}
