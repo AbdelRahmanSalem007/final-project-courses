@@ -46,7 +46,7 @@ const Login = () => {
             </Form.Group>
           </div>
           <p className="text-center my-3">
-            ليس لديك حساب؟ <Link to="/login">إنشاء حساب جديد</Link>
+            ليس لديك حساب؟ <Link to="/register">إنشاء حساب جديد</Link>
           </p>
         </Form>
       </section>
