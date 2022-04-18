@@ -45,6 +45,9 @@ const Login = () => {
               </Button>
             </Form.Group>
           </div>
+          <p className="text-center my-3">
+            ليس لديك حساب؟ <Link to="/login">إنشاء حساب جديد</Link>
+          </p>
         </Form>
       </section>
     </div>
