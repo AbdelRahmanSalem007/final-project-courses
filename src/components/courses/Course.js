@@ -5,7 +5,7 @@ import "./course.scss";
 const Course = ({ course }) => {
   const [modal, setModal] = useState(false);
   return (
-    <div className="course col-md-6 col-xl-4">
+    <div className="course">
       <div className="card course__card p-2 my-2">
         <Link to={`/courses/${course.id}`}>
           <img

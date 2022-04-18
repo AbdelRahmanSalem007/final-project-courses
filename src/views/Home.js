@@ -1,11 +1,37 @@
-import Questions from "../components/Questions/Questions";
-import PrivacyPolicy from "../components/Privacy/PrivacyPolicy";
 import "./home.scss";
 import AngularImage from "../assets/angular.png";
 import webDevelopmentImage from "../assets/web_developement.png";
 import { Row, Col } from "antd";
+// import Slider from "react-slick";
+import Slider from "react-slick";
+import coursesData from "../components/courses/coursesData";
+import Course from "./../components/courses/Course";
 
 const Home = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1120,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 989,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="home">
       <div className="container">
@@ -80,9 +106,20 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-
-        <PrivacyPolicy />
-        <Questions />
+        <div className="home__slider py-3">
+          <div className="container">
+            <header className="home__slider-header">
+              <h2>الكورسات المفضلة</h2>
+            </header>
+            <Slider {...settings}>
+              {coursesData.map((course) => (
+                <div className="course-slider__wrapper">
+                  <Course course={course} key={course.id} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
       </div>
     </div>
   );

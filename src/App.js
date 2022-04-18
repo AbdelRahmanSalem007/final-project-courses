@@ -11,13 +11,13 @@ import CoursesLessons from "./components/Courses-Lessons/CoursesLesson";
 import StudentSetting from "./components/Student/StudentSettings";
 import ForgetPassword from "./components/registeration/ForgetPassword";
 import CourseDetails from "./components/courses/CourseDetails";
-import Questions from "./components/Questions/Questions";
-import PrivacyPolicy from "./components/Privacy/PrivacyPolicy";
+import Footer from "./components/shared/Footer";
 
 // styling
 import "antd/dist/antd.css";
 import "./App.scss";
-import Footer from "./components/shared/Footer";
+import Questions from "./components/Questions/Questions";
+import PrivacyPolicy from "./components/Privacy/PrivacyPolicy";
 
 function App() {
   return (
@@ -36,10 +36,11 @@ function App() {
           <Route path="/reset-password" element={<ForgetPassword />} />
           <Route path="/course-lessons" element={<CoursesLessons />} />
           <Route path="/student-settings" element={<StudentSetting />} />
+          <Route path="/faq" element={<Questions />} />
+          <Route path="/terms" element={<PrivacyPolicy />} />
         </Routes>
+        <Footer />
       </main>
-      <PrivacyPolicy />
-      <Questions />
     </>
   );
 }
