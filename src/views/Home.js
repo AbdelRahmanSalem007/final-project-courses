@@ -113,7 +113,10 @@ const Home = () => {
             </header>
             <Slider {...settings}>
               {coursesData.map((course) => (
-                <div className="course-slider__wrapper">
+                <div
+                  dir="rtl"
+                  className="course-slider__wrapper text-align-start"
+                >
                   <Course course={course} key={course.id} />
                 </div>
               ))}
