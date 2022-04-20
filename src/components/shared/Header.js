@@ -91,7 +91,7 @@ const Header = () => {
                   />
                   <Dropdown.Item>
                     <Button type="default" className="w-100 my-learning__btn">
-                      الذهاب إلي كورساتي
+                      <Link to="/courses">الذهاب إلي كورساتي</Link>
                     </Button>
                   </Dropdown.Item>
                 </Dropdown.Menu>
