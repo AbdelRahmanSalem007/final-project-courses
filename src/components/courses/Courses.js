@@ -1,8 +1,10 @@
 import React from "react";
 import Course from "./Course";
 import coursesData from "./coursesData";
-import "./courses.scss";
 import { Form, Input } from "antd";
+import { IoIosSearch } from "react-icons/io";
+// style
+import "./courses.scss";
 
 const Courses = () => {
   return (
@@ -13,7 +15,10 @@ const Courses = () => {
             <header className="courses__header">
               <h2>ابحث في جميع الكورسات</h2>
             </header>
-            <Input placeholder="ابحث عن كورس" className="shadow-none w-50" />
+            <div className="search-input__wrapper">
+              <Input placeholder="ابحث عن كورس" className="shadow-none w-50" />
+              <IoIosSearch className="search-icon" size={16} />
+            </div>
           </Form>
           {coursesData.map((course) => (
             <div className=" col-md-6 col-xl-4">

@@ -7,3 +7,18 @@
     margin-bottom: 1rem;
   }
 }
+
+.search-input__wrapper {
+  position: relative;
+  width: 15rem;
+  input {
+    width: 100% !important;
+    padding: 0.56rem;
+  }
+  .search-icon {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
